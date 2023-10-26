@@ -2,10 +2,8 @@
 :root {
     --font-family-inter: 'Inter';
     --font-family-press: 'PressStart2P';
-    --font-weight-light: 400;
-    --font-weight-dark: 465;
-    --font-title-dark: 785;
-    --font-title-light: 700;
+    --font-weight-themes: 400;
+    --font-title-themes: 700;
     --background-color: #FFF;
     --accent-color: #000;
     --linear-gradient-one: #e7e7e7;
@@ -17,4 +15,5 @@
     --heart-contour: #000;
     --label-color-shadow: #fff;
 }
+
 
