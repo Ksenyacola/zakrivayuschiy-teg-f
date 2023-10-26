@@ -13,6 +13,7 @@
 --text-button: #00CC14;
 --bg-button-hover: #00cc14;
 --heart-contour: #00cc14;
+--label-color-shadow: #000;
 }
 
 :root.theme-light {
