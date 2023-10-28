@@ -402,5 +402,6 @@
 @media screen and (max-width: 768px) {
   .page {
     width: 100%;
+    overflow-x: hidden;
   }
 }
