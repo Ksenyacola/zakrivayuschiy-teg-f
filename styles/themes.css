@@ -9,6 +9,7 @@
   --background-color: #000;
   --linear-gradient-one: #007f0c;
   --linear-gradient-two: #004306;
+  --linear-gradient-three: #000;
   --favicon: #00cc14;
   --text-button: #00cc14;
   --bg-button-hover: #00cc14;
@@ -25,6 +26,7 @@
   --accent-color: #000;
   --linear-gradient-one: #e7e7e7;
   --linear-gradient-two: #1a1a1a;
+  --linear-gradient-three: #d3d3d3;
   --favicon: #000;
   --text-button: #fff;
   --bg-button-hover: #000;
@@ -41,6 +43,7 @@
     --accent-color: #000;
     --linear-gradient-one: #e7e7e7;
     --linear-gradient-two: #1a1a1a;
+    --linear-gradient-three: #d3d3d3;
     --favicon: #000;
     --text-button: #fff;
     --bg-button-hover: #000;
@@ -50,12 +53,13 @@
   }
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
     --accent-color: #00cc14;
     --background-color: #000;
     --linear-gradient-one: #007f0c;
     --linear-gradient-two: #004306;
+    --linear-gradient-three: #000;
     --favicon: #00cc14;
     --text-button: #00cc14;
     --bg-button-hover: #00cc14;
@@ -63,5 +67,15 @@
     --label-color-shadow: #000;
     --font-weight-themes: 465;
     --font-title-themes: 785;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .button__text {
+    color: var(--text-button);
+  }
+
+  .floppy-img {
+    color: var(--accent-color);
   }
 }
