@@ -183,7 +183,7 @@
 @supports ((text-stroke: 1px #ffffff) or (-webkit-text-stroke: 1px #000000)) {
   .img-label {
     -webkit-text-stroke: 1px var(--background-color);
-    text-stroke: 1px var(--background-color);
+    text-shadow: 1px var(--background-color);
     text-shadow: none;
   }
 }
@@ -267,7 +267,7 @@
 
 .button__save-like-ok:hover .button__text {
   color: var(--text-button);
-  transform: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 /* футер */
