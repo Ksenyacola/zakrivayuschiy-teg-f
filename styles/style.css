@@ -183,7 +183,7 @@
 @supports ((text-stroke: 1px #ffffff) or (-webkit-text-stroke: 1px #000000)) {
   .img-label {
     -webkit-text-stroke: 1px var(--background-color);
-    text-shadow: 1px var(--background-color);
+    text-stroke: 1px var(--background-color);
     text-shadow: none;
   }
 }
@@ -376,7 +376,7 @@
 }
 
 .filter-img7 {
-  filter: drop-shadow(20px) sepia(40%);
+  filter: drop-shadow(20px) sepia(40%) invert(50%);
 }
 
 .filter-img8 {
