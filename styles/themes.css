@@ -23,7 +23,7 @@
   --font-weight-themes: 400;
   --font-title-themes: 700;
   --background-color: #fff;
-  --accent-color: #000;
+  --accent-color: #000000;
   --linear-gradient-one: #e7e7e7;
   --linear-gradient-two: #1a1a1a;
   --linear-gradient-three: #d3d3d3;
@@ -67,15 +67,5 @@
     --label-color-shadow: #000;
     --font-weight-themes: 465;
     --font-title-themes: 785;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .button__text {
-    color: var(--text-button);
-  }
-
-  .floppy-img {
-    color: var(--accent-color);
   }
 }

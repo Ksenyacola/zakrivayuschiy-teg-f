@@ -219,8 +219,8 @@
 }
 
 .card__icon-button:focus-visible {
-  outline: 2px solid var(--accent-color);
-  transition: outline 0.3s ease;
+ outline: 2px solid var(--accent-color);
+  transition: outline 0.1s ease;
 }
 
 .card__like-button {
@@ -229,49 +229,49 @@
   width: 130px;
 }
 
-.button__save-like-ok {
+.button__main-buttons {
   background-color: var(--background-color);
   position: relative;
   overflow: hidden;
   border: 2px solid var(--accent-color);
   color: var(--accent-color);
+  cursor: pointer;
 }
 
 .button__text {
   font-family: var(--font-family-press);
+  mix-blend-mode: difference;
   font-size: 14px;
   font-variation-settings: "wght" var(--font-weight-themes);
   z-index: 1;
   position: relative;
-  color: var(--accent-color);
-  cursor: pointer;
-  mix-blend-mode: difference;
+  color: var(--text-button);
   transition: color 1s ease;
 }
 
-.button__save-like-ok:focus-visible {
+.button__main-buttons:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0px 0px var(--accent-color);
   transition: box-shadow 0.3s ease;
 }
 
-.button__save-like-ok::after {
+.button__main-buttons::after {
   content: "";
   position: absolute;
   display: block;
   inset: 0;
   z-index: 0;
-  background-color: var(--accent-color, #000);
+  background-color: var(--bg-button-hover);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.5s ease-in-out;
 }
 
-.button__save-like-ok:hover::after {
+.button__main-buttons:hover::after {
   transform: scaleX(1);
 }
 
-.button__save-like-ok:hover .button__text {
+.button__main-buttons:hover .button__text {
   color: var(--text-button);
   transition: color 0.3s ease-in-out;
 }
@@ -342,7 +342,7 @@
   align-items: center;
 }
 
-.btn_dialog-text {
+.btn__dialog-text {
   background-color: var(--background-color);
   cursor: pointer;
   position: relative;
@@ -357,36 +357,36 @@
 
 /* фильтры для изображений*/
 
-.filter-img1 {
+.filter__img-brightness {
   filter: brightness(170%);
 }
 
-.filter-img2 {
+.filter__img-blur {
   filter: blur(10px);
 }
 
-.filter-img3 {
+.filter__img-opacity {
   filter: opacity(50%);
 }
 
-.filter-img4 {
+.filter__img-grayscale {
   filter: grayscale(99%);
 }
 
-.filter-img5 {
+.filter__img-saturate {
   filter: saturate(200%);
 }
 
-.filter-img6 {
+.filter__img-invert {
   filter: invert(140%);
 }
 
-.filter-img7 {
+.filter__img-drop-shadow {
   filter: drop-shadow(20px) sepia(40%) invert(50%);
 }
 
-.filter-img8 {
-  filter: grayscale(70%);
+.filter__img-sepia {
+  filter: sepia(70%);
 }
 
 
@@ -416,3 +416,4 @@
     overflow-x: hidden;
   }
 }
+
