@@ -397,6 +397,11 @@
   .header__title {
     margin: 120px 14px 14px 0;
   }
+
+  .footer__btn-save {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 768px) {
